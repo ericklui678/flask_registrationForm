@@ -12,8 +12,8 @@
                 <input class=nameField type="text" name="firstName" placeholder="First name">
                 <input class=nameField type="text" name="lastName" placeholder="Last name">
                 <input class=longField type="text" name="email" placeholder="Email">
-                <input class=longField type="text" name="password" placeholder="Password">
-                <input class=longField type="text" name="confirm" placeholder="Confirm password">
+                <input class=longField type="password" name="password" placeholder="Password">
+                <input class=longField type="password" name="confirm" placeholder="Confirm password">
                 <input id=submit type="submit" name="" value="Create">
                 {% with messages = get_flashed_messages(with_categories=true) %}
                   {% if messages %}

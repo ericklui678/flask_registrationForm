@@ -4,17 +4,20 @@
     font-family: sans-serif, serif;
     font-weight: 400;
 }
-div#wrapper{
+body{
     background-color: #e9ebee;
+}
+div#wrapper{
     margin: auto;
-    width: 500px;
-    height: 500px;
     padding: 30px;
 }
 h1{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 25pt;
     text-align: center;
+}
+h3{
+    margin-top: 10px;
 }
 form{
     width: 330px;
@@ -51,4 +54,9 @@ ul{
     margin-top: 10px;
     font-size: 10pt;
     color: red
+}
+form ul .show{
+    display: block;
+    color: black;
+    margin-left: -20px;
 }
