@@ -52,18 +52,25 @@ def process():
     else:
         validCount += 1
 
-    # now = datetime.datetime.now()
     current = str(datetime.datetime.now().strftime('%Y-%m-%d'))
-    bday = request.form['date']
-    print current, bday
+    cYear = int(current[:4])
+    cMonth = int(current[5:7])
+    cDay = int(current[8:])
+
+    bday = str(request.form['date'])
+    bYear = int(bday[:4])
+    bMonth = int(bday[5:7])
+    bDay = int(bday[8:])
+
     if len(request.form['date']) < 1:
         flash('Birthday is required')
     elif len(request.form['date']) > 10:
         print len(request.form['date'])
         flash('Birthday is invalid')
-
-    # else:
-    #     validCount += 1
+    elif (bYear > cYear) or (bYear == cYear and bMonth > cMonth) or (bYear == cYear and bMonth == cMonth and bDay > cDay):
+        flash('Birthday must be in the past')
+    else:
+        validCount += 1
 
     if validCount == 5:
         flash('You have submitted your information!', 'show')
@@ -71,5 +78,3 @@ def process():
     return redirect('/')
 
 app.run(debug = True)
-
-# elif not EMAIL_REGEX.match(request.form['email']):
