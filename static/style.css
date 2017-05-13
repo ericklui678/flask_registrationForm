@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif, serif;
+    font-weight: 400;
+}
+div#wrapper{
+    background-color: #e9ebee;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    padding: 30px;
+}
+h1{
+    margin-bottom: 10px;
+    font-size: 25pt;
+    text-align: center;
+}
+form{
+    width: 330px;
+    height: 500px;
+    margin: auto;
+}
+.nameField, .longField{
+    text-align: left;
+    height: 40px;
+    font-size: 12pt;
+    border-radius: 5px;
+    border: 1px solid #bdc7d8;
+    padding-left: 5px;
+    margin-bottom: 5px;
+
+}
+.nameField{
+    width: 155px;
+}
+.longField{
+    width: 321px;
+}
+#submit{
+    background-color: #65a953;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #3b6e22;
+    margin-top: 10px;
+    width: 70px;
+    height: 25px;
+}
+ul{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 10pt;
+    color: red
+}
