@@ -60,3 +60,7 @@ form ul .show{
     color: black;
     margin-left: -20px;
 }
+#date{
+    display: block;
+    width: 160px;
+}
